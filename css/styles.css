@@ -526,9 +526,11 @@ progress {
 
 .display-4 {
   font-size: calc(1.475rem + 2.7vw);
+  color: rgb(114, 89, 0);
   font-weight: 300;
   line-height: 1.2;
 }
+
 @media (min-width: 1200px) {
   .display-4 {
     font-size: 3.5rem;
@@ -8100,7 +8102,7 @@ textarea.form-control-lg {
 
 .text-white-50 {
   --bs-text-opacity: 1;
-  color: rgba(255, 255, 255, 0.5) !important;
+  color: rgb(114, 89, 0) !important;
 }
 
 .text-reset {
