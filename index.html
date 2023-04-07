@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <title>JetGO</title>
+    <!-- Favicon-->
+    <link rel="icon" type="image/x-icon" href="assets/JetG.png" />
+    <!-- Bootstrap icons-->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+    <!-- Core theme CSS (includes Bootstrap)-->
+    <link href="css/styles.css" rel="stylesheet" />
+    <link href="css/baru.css" rel="stylesheet" />
+  </head>
+  <body>
+    <!-- Navigation-->
+    <nav class="fixed-nav-bar navbar-expand-lg navbar-light bg-dark">
+      <div class="container px-4 px-lg-5">
+        <a class="navbar-brand" href="#!"></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="collapse navbar-collapse"
+          id="navbarSupportedContent"
+          style="height: 50px"
+        >
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0 ms-lg-4">
+            <li><a></a></li>
+          </ul>
+          <form class="d-flex">
+            <button
+              type="button"
+              class="btn btn-outline-light"
+              data-bs-toggle="modal"
+              data-bs-target="#exampleModalHistory"
+            >
+              Riwayat Pesanan
+            </button>
+            <div
+              class="modal fade"
+              id="exampleModalHistory"
+              tabindex="-1"
+              aria-labelledby="exampleModalHistory"
+              aria-hidden="true"
+            >
+              <div class="modal-dialog modal-xl">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalHistory">
+                      Riwayat Pesananmu
+                    </h5>
+                    <button
+                      type="button"
+                      class="btn-close"
+                      data-bs-dismiss="modal"
+                      aria-label="Close"
+                    ></button>
+                  </div>
+                  <div class="modal-body">
+                    <table
+                      class="table table-bordered"
+                      id="employeeList"
+                      hidden
+                    >
+                      <thead class="table-dark">
+                        <tr>
+                          <th scope="col">Nama Layanan</th>
+                          <th scope="col">Hari</th>
+                          <th scope="col">Sesi</th>
+                          <th scope="col">Nama Lengkap</th>
+                          <th scope="col">Nomor Telepon</th>
+                          <th scope="col">Aksi</th>
+                        </tr>
+                      </thead>
+                      <tbody></tbody>
+                    </table>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </nav>
+    <!-- Header-->
+    <header
+      class="bg-dark py-5"
+      style="
+        background-image: url('gambar/engin-akyurt-ZbzYDboN7fg-unsplash.jpg');
+      "
+    >
+      <div class="container px-4 px-lg-5 my-5">
+        <div class="text-center text-white">
+          <h1 class="display-4 fw-bolder"></h1>
+          <img src="assets/jetgologo.png" alt="" />
+          <p class="lead fw-normal text-white-50 mb-0">
+            <strong>JetGO</strong> merupakan pelayanan
+            <em>pijet</em> professional di rumah, kos, apartment, hotel hingga
+            kantormu. <br /><br />Nikmati layanan profesional dari staf terlatih
+            <strong>JetGO</strong> dan kami akan memanjakanmu dengan pelayanan
+            <em>pijet</em> yang berkualitas dan akan meremajakan tubuh, pikiran,
+            dan jiwamu.<br /><br />
+            <strong>Pijet? GO!</strong>
+          </p>
+        </div>
+      </div>
+    </header>
+    <!-- Section-->
+    <section class="py-5">
+      <div class="container px-4 px-lg-5 mt-5">
+        <!-- <table class="table table-bordered" id="employeeList" hidden>
+          <thead class="table-dark">
+            <tr>
+              <th scope="col">Nama Layanan</th>
+              <th scope="col">Hari</th>
+              <th scope="col">Sesi</th>
+              <th scope="col">Nama Lengkap</th>
+              <th scope="col">Nomor Telepon</th>
+              <th scope="col">Aksi</th>
+            </tr>
+          </thead>
+          <tbody></tbody>
+        </table> -->
+        <center>
+          <div
+            class="alert alert-success"
+            role="alert"
+            id="my-text-hidden"
+            hidden
+          >
+            Data kamu sukses diperbaharui! Silakan cek "Riwayat Pesanan" untuk
+            mengecek pesananmu.
+          </div>
+        </center>
+      </div>
+      <div class="container px-4 px-lg-5 mt-5">
+        <div
+          class="row gx-4 gx-lg-5 row-cols-2 row-cols-md-3 row-cols-xl-4 justify-content-center"
+        >
+          <div class="col mb-5">
+            <div class="card h-100">
+              <!-- Product image-->
+              <img
+                class="card-img-top"
+                src="gambar/chelsea-shapouri-r40EYKVyutI-unsplash.jpg"
+                alt="..."
+              />
+              <!-- Product details-->
+              <div class="card-body p-4">
+                <div class="text-center">
+                  <!-- Product name-->
+                  <h5 class="fw-bolder">Pijat Swedia</h5>
+                  <!-- Product reviews-->
+                  <div
+                    class="d-flex justify-content-center small text-warning mb-2"
+                  >
+                    <div class="bi-star-fill"></div>
+                    <div class="bi-star-fill"></div>
+                    <div class="bi-star-fill"></div>
+                    <div class="bi-star-fill"></div>
+                  </div>
+                  Rp. 150.000
+                </div>
+              </div>
+              <!-- Product actions-->
+              <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                <div class="text-center">
+                  <!-- Button trigger modal -->
+                  <button
+                    type="button"
+                    class="btn btn-outline-dark mt-auto"
+                    data-bs-toggle="modal"
+                    data-bs-target="#exampleModal"
+                  >
+                    Pesan Sekarang
+                  </button>
+
+                  <!-- Modal -->
+                  <div
+                    class="modal fade"
+                    id="exampleModal"
+                    tabindex="-1"
+                    aria-labelledby="exampleModalLabel"
+                    aria-hidden="true"
+                  >
+                    <div class="modal-dialog modal-xl">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h5 class="modal-title" id="exampleModalLabel">
+                            Registrasi
+                          </h5>
+                          <button
+                            type="button"
+                            class="btn-close"
+                            data-bs-dismiss="modal"
+                            aria-label="Close"
+                          ></button>
+                        </div>
+                        <div class="modal-body">
+                          <div class="mb-3">
+                            <label class="form-label">Nama Layanan</label>
+
+                            <select
+                              class="form-select"
+                              name="formLayanan"
+                              id="formLayanan"
+                            >
+                              <option selected>Pilih Layanan</option>
+                              <option value="Pijat Swedia">Pijat Swedia</option>
+                              <option value="Pijat Aromaterapi">
+                                Pijat Aromaterapi
+                              </option>
+                              <option value="Pijat Sport">Pijat Sport</option>
+                            </select>
+                          </div>
+                          <div class="mb-3">
+                            <label class="form-label">Hari</label>
+                            <select class="form-select" id="formHari">
+                              <option selected>Pilih hari</option>
+                              <option value="Senin">Senin</option>
+                              <option value="Selasa">Selasa</option>
+                              <option value="Rabu">Rabu</option>
+                              <option value="Kamis">Kamis</option>
+                              <option value="Jumat">Jumat</option>
+                            </select>
+                          </div>
+                          <div class="mb-3">
+                            <label class="form-label">Sesi</label>
+                            <select class="form-select" id="formSesi">
+                              <option selected>Pilih sesi</option>
+                              <option value="Pagi (09:00 - 12:00)">
+                                Pagi (09:00 - 12:00)
+                              </option>
+                              <option value="Siang (13:00 - 15:00)">
+                                Siang (13:00 - 15:00)
+                              </option>
+                              <option value="Sore (16:00 - 18:00)">
+                                Sore (16:00 - 18:00)
+                              </option>
+                              <option value="Malam (20:00 - 22:00)">
+                                Malam (20:00 - 22:00)
+                              </option>
+                            </select>
+                          </div>
+                          <div class="mb-3">
+                            <label class="form-label">Nama Lengkap</label>
+                            <input
+                              type="text"
+                              class="form-control"
+                              placeholder="Masukkan nama lengkap"
+                              id="formNama"
+                            />
+                          </div>
+                          <div class="mb-3">
+                            <label class="form-label">Nomor Telepon</label>
+                            <input
+                              type="number"
+                              class="form-control"
+                              placeholder="Masukkan nomor telepon"
+                              id="formNomor"
+                            />
+                          </div>
+                        </div>
+                        <div class="modal-footer">
+                          <button
+                            type="button"
+                            class="btn btn-outline-secondary"
+                            data-bs-dismiss="modal"
+                          >
+                            Close
+                          </button>
+                          <button
+                            type="button"
+                            class="btn btn-outline-dark mt-auto"
+                            id="save"
+                            data-bs-dismiss="modal"
+                            onclick="event.preventDefault();onFormSubmit();"
+                          >
+                            Save changes
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col mb-5">
+            <div class="card h-100">
+              <!-- Sale badge-->
+              <div
+                class="badge bg-dark text-white position-absolute"
+                style="top: 0.5rem; right: 0.5rem"
+              >
+                Sale
+              </div>
+              <!-- Product image-->
+              <img
+                class="card-img-top"
+                src="gambar/alan-caishan-cU53ZFBr3lk-unsplash.jpg"
+                alt="..."
+              />
+              <!-- Product details-->
+              <div class="card-body p-4">
+                <div class="text-center">
+                  <!-- Product name-->
+                  <h5 class="fw-bolder">Pijat Aromaterapi</h5>
+                  <!-- Product reviews-->
+                  <div
+                    class="d-flex justify-content-center small text-warning mb-2"
+                  >
+                    <div class="bi-star-fill"></div>
+                    <div class="bi-star-fill"></div>
+                    <div class="bi-star-fill"></div>
+                    <div class="bi-star-fill"></div>
+                    <div class="bi-star-fill"></div>
+                  </div>
+                  <!-- Product price-->
+                  <span class="text-muted text-decoration-line-through"
+                    >Rp. 199.999</span
+                  >
+                  Rp. 120.000
+                </div>
+              </div>
+              <!-- Product actions-->
+              <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                <div class="text-center">
+                  <!-- Button trigger modal -->
+                  <button
+                    type="button"
+                    class="btn btn-outline-dark mt-auto"
+                    data-bs-toggle="modal"
+                    data-bs-target="#exampleModal"
+                  >
+                    Pesan Sekarang
+                  </button>
+                  <!-- Modal -->
+                  <div
+                    class="modal fade"
+                    id="exampleModal"
+                    tabindex="-1"
+                    aria-labelledby="exampleModalLabel"
+                    aria-hidden="true"
+                  ></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col mb-5">
+            <div class="card h-100">
+              <!-- Sale badge-->
+              <div
+                class="badge bg-dark text-white position-absolute"
+                style="top: 0.5rem; right: 0.5rem"
+              >
+                Sale
+              </div>
+              <!-- Product image-->
+              <img
+                class="card-img-top"
+                src="gambar/conscious-design-ubeslMfS1lk-unsplash.jpg"
+                alt="..."
+              />
+              <!-- Product details-->
+              <div class="card-body p-4">
+                <div class="text-center">
+                  <!-- Product name-->
+                  <h5 class="fw-bolder">Pijat Sport</h5>
+                  <!-- Product reviews-->
+                  <div
+                    class="d-flex justify-content-center small text-warning mb-2"
+                  >
+                    <div class="bi-star-fill"></div>
+                    <div class="bi-star-fill"></div>
+                    <div class="bi-star-fill"></div>
+                    <div class="bi-star-fill"></div>
+                  </div>
+                  <!-- Product price-->
+                  <span class="text-muted text-decoration-line-through"
+                    >Rp. 170.999</span
+                  >
+                  Rp. 140.000
+                </div>
+              </div>
+              <!-- Product actions-->
+              <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                <div class="text-center">
+                  <!-- Button trigger modal -->
+                  <button
+                    type="button"
+                    class="btn btn-outline-dark mt-auto"
+                    data-bs-toggle="modal"
+                    data-bs-target="#exampleModal"
+                  >
+                    Pesan Sekarang
+                  </button>
+                  <!-- Modal -->
+                  <div
+                    class="modal fade"
+                    id="exampleModal"
+                    tabindex="-1"
+                    aria-labelledby="exampleModalLabel"
+                    aria-hidden="true"
+                  ></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Footer-->
+    <footer class="py-5 bg-dark">
+      <div class="container">
+        <p class="m-0 text-center text-white">
+          © 2023 by JetGO. Proudly Created by Hacktiv8.
+        </p>
+      </div>
+    </footer>
+    <!-- Bootstrap core JS-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Core theme JS-->
+    <script src="js/scripts.js"></script>
+  </body>
+</html>
