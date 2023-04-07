@@ -5,6 +5,9 @@ function onFormSubmit() {
   alertUpdateEl.hidden = false;
   const alertUpdateEl2 = document.getElementById("my-text-hidden");
   alertUpdateEl2.hidden = false;
+  setTimeout(function () {
+    alertUpdateEl2.hidden = true;
+  }, 10000);
   var formData = readFormData();
   if (selectedRow == null) insertNewRecord(formData);
   else updateRecord(formData);
