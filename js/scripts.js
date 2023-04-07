@@ -41,7 +41,8 @@ function insertNewRecord(data) {
   cell5.innerHTML = data.formNomor;
   cell5 = newRow.insertCell(5);
   cell5.innerHTML = `<td>
-  <button type="button" class="btn btn-outline-danger" onClick="onDelete(this)">
+  <button type="button" class="btn btn-outline-danger" data-bs-toggle="modal" data-bs-target="exampleModal"
+   onClick="onDelete(this)">
     Delete
   </button>
   <button
@@ -56,9 +57,9 @@ function insertNewRecord(data) {
 }
 
 function resetForm() {
-  document.getElementById("formLayanan").value = "";
-  document.getElementById("formHari").value = "";
-  document.getElementById("formSesi").value = "";
+  // document.getElementById("formLayanan").value = "";
+  // document.getElementById("formHari").value = "";
+  // document.getElementById("formSesi").value = "";
   document.getElementById("formNama").value = "";
   document.getElementById("formNomor").value = "";
   selectedRow = null;
@@ -83,9 +84,9 @@ function updateRecord(formData) {
 function onDelete(td) {
   if (confirm("Are you sure to delete this record ?")) {
     const alertUpdateEl = document.getElementById("employeeList");
-    alertUpdateEl.hidden = true;
+    // alertUpdateEl.hidden = true;
     row = td.parentElement.parentElement;
-    document.getElementById("employeeList").deleteRow(row.rowIndex);
+    row.hidden = true;
     resetForm();
   }
 }
